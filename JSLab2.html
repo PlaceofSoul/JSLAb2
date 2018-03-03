@@ -1,0 +1,151 @@
+/* Q1 */
+
+var left1 = ['1','2','3'];
+tmp=left1[0];
+left1[0]=left1[2];
+left1[2]=tmp;
+
+console.log(left1)
+
+var left2 = ['5','11','9'];
+ttm=left1[0];
+left2[0]=left2[2];
+left2[2]=ttm;
+
+console.log(left2)
+
+var left3 = ['7','0','0'];
+tmm=left3[0];
+left3[0]=left3[2];
+left3[2]=ttm'
+
+console.log(left3)
+
+/* Q2 */
+
+  var reverse1 = ['1','2','3'];
+
+  console.log(reverse1.reverse());
+
+  var reverse2 = ['5','11','9'];
+
+  console.log(reverse2.reverse());
+
+  var reverse3 = ['7','0','0'];
+
+  console.log(reverse3.reverse());
+
+  /* Q3 */
+
+  var has1 = ['2','5'];
+
+  console.log(has1.indexOf('2'));
+
+  console.log(has1.indexOf('3'));
+
+  var has2 = ['4','3'];
+
+  console.log(has2.indexOf('2'));
+
+  console.log(has2.indexOf('3'));
+
+  var has3 = ['4','5'];
+
+  console.log(has3.indexOf('2'));
+
+  console.log(has3.indexOf('3'));
+
+  /* Q4 */
+
+  function fixion(nums){
+    if (nums[0] == 2 && nums[1] == 3)
+    nums[1] = 0;
+    if (nums[1] == 2 && nums[2] == 3)
+    nums[2] = 0;
+    return [nums[0],nums[1],nums[2]];
+  }
+
+
+  console.log(fixion([1,2,3]));
+
+  console.log(fixion([2,3,5]));
+
+  console.log(fixion([1,2,1]));
+
+
+
+  /* Q5 */
+  console.log(Math.max('1','2','3'))
+
+  console.log(Math.max('1','5','3'))
+
+  console.log(Math.max('5','2','3'))
+
+/* Q6 */
+var swap1 = ['1','2','3','4'];
+swp=swap1[0];
+swap1[0]=swap1[3];
+swap1[3]=swp;
+swap1.length = -1;
+
+console.log(swap1);
+
+var swap2 = ['1','2','3'];
+swx=swap[0];
+swap2[0]=swap2[2];
+swap[2]=swx;
+swap2.length=-1;
+
+console.log(swap2)
+
+var swap3 = ['8','6','7','9','5'];
+swy=swap3[0];
+swap3[0]=swap3[4];
+swap3[4]=swy;
+swap3.length=-1;
+
+console.log(swap3)
+
+/* Q7 */
+
+var lucky1 = [1,3,4,5];
+function unlucky(lucky1){
+  for (i = 0; i < lucky1.length; i++)
+  {
+    current = lucky1[i];
+    next = lucky1[i+1];
+    if (current == 1 &&
+       next == 3){
+      return "unlucky";
+    }
+  }
+}
+console.log(unlucky(lucky1));
+
+var lucky2 = [2,1,3,4,5];
+function unlucky(lucky12){
+  for (i = 0; i < lucky2.length; i++)
+  {
+    current = lucky2[i];
+    next = lucky2[i+1];
+    if (current == 1 &&
+       next == 3){
+      return "unlucky";
+    }
+  }
+}
+console.log(unlucky(lucky2));
+
+var lucky3 = [1,1,1]
+function unlucky(lucky3){
+  for (i = 0; i < lucky3.length; i++)
+  {
+    current = lucky3[i];
+    next = lucky3[i+1];
+    if (current == 1 &&
+       next == 3){
+      return "unlucky";
+    }
+  }
+}
+console.log(unlucky(lucky3));
